@@ -1,0 +1,58 @@
+{
+  "name": "module-name",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite -c ./src/app/vite/vite.config.ts",
+    "build": "tsc -b && vite build -c ./src/app/vite/vite.config.ts",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006 -c ./src/app/.storybook",
+    "build-storybook": "storybook build -c ./src/app/.storybook",
+    "lint:fix": "tsc -b && npm run lint:ts:fix && npm run lint:scss:fix",
+    "lint:ts": "npx eslint .",
+    "lint:ts:fix": "npx eslint . --fix",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "classnames": "^2.5.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "3.2.4",
+    "@eslint/js": "^9.17.0",
+    "@storybook/addon-essentials": "8.5.3",
+    "@storybook/addon-interactions": "8.5.3",
+    "@storybook/addon-onboarding": "8.5.3",
+    "@storybook/blocks": "8.5.3",
+    "@storybook/react": "8.5.3",
+    "@storybook/react-vite": "8.5.3",
+    "@storybook/test": "8.5.3",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.17.0",
+    "eslint-plugin-boundaries": "^5.0.1",
+    "eslint-plugin-i18next": "^6.1.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-storybook": "^0.11.2",
+    "globals": "^15.14.0",
+    "husky": "^9.1.7",
+    "sass": "^1.83.4",
+    "storybook": "8.5.3",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.18.2",
+    "vite": "^6.0.5",
+    "vite-plugin-html": "^3.2.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  }
+}
