@@ -77,7 +77,6 @@ export default tseslint.config(
             {
               from: 'app',
               allow: [
-                'shared',
                 'entities',
                 'features',
                 'widgets',
@@ -88,7 +87,6 @@ export default tseslint.config(
             {
               from: 'pages',
               allow: [
-                'shared',
                 'entities',
                 'features',
                 'widgets',
@@ -98,7 +96,6 @@ export default tseslint.config(
             {
               from: 'widgets',
               allow: [
-                'shared',
                 'entities',
                 'features',
               ],
@@ -107,7 +104,6 @@ export default tseslint.config(
             {
               from: 'features',
               allow: [
-                'shared',
                 'entities',
               ],
               importKind: ['value', 'type'],
@@ -115,7 +111,6 @@ export default tseslint.config(
             {
               from: 'entities',
               allow: [
-                'shared',
                 ['entities', { elementName: 'types' }],
                 ['entities', { elementName: 'schemes' }],
               ],
@@ -169,7 +164,6 @@ export default tseslint.config(
               '@widgets',
               '@features',
               '@entities',
-              '@shared',
               '^',
               '^\\./',
               '^.+\\.(module.css|module.scss)$',
